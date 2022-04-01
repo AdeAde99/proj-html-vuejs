@@ -1,5 +1,5 @@
 <template>
-  
+<!--Qui inserisco le mainSection-
 </template>
 
 <script>

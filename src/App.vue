@@ -1,6 +1,7 @@
 <template>
+
+<!--Qui verranno inseriti la navbar, il main e il footer.-->
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
   </div>
 </template>
 
