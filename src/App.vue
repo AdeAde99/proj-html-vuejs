@@ -1,18 +1,21 @@
 <template>
 <!--Qui verranno inseriti la navbar, il main e il footer.-->
   <div id="app">
-    <headerNavbar />
+    <mainProject />
+    <iacademySlider />
   </div>
 </template>
 
 <script>
 
-import headerNavbar from '@/components/headerNavbar.vue'
+import mainProject from '@/components/mainProject.vue'
+import iacademySlider from '@/components/iacademySlider.vue'
 
 export default {
   name: 'App',
   components: {
-    headerNavbar
+    mainProject,
+    iacademySlider
   }
 }
 </script>
@@ -24,5 +27,6 @@ export default {
     padding: 0;
     box-sizing: border-box;
   }
+  position: relative;
 }
 </style>

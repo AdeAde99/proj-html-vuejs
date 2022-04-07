@@ -6,9 +6,11 @@
               <a href="">{{ link.text }}</a>
           </li>
       </ul>
-      <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
-      <font-awesome-icon icon="fa-solid fa-bag-shopping" />
-      <font-awesome-icon icon="fa-solid fa-bars" />
+      <div>
+        <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+        <font-awesome-icon icon="fa-solid fa-bag-shopping" />
+        <font-awesome-icon icon="fa-solid fa-bars" />
+      </div>
   </header>
 </template>
 
@@ -58,8 +60,16 @@ template {
 header {
     display: flex;
     align-items: center;
-    background-color: aquamarine;
-}
+    justify-content: space-around;
+
+    width: 100%;
+
+    position: fixed;
+    div {
+      display: flex;
+      gap: 1rem;
+    }
+  }
 ul {
     display: flex;
     list-style: none;
