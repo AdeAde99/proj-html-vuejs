@@ -7,9 +7,9 @@
           </li>
       </ul>
       <div>
-        <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
-        <font-awesome-icon icon="fa-solid fa-bag-shopping" />
-        <font-awesome-icon icon="fa-solid fa-bars" />
+        <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="whiteIcon iconNav" />
+        <font-awesome-icon icon="fa-solid fa-bag-shopping" class="whiteIcon iconNav" />
+        <font-awesome-icon icon="fa-solid fa-bars" class="whiteIcon iconNav"/>
       </div>
   </header>
 </template>
@@ -52,12 +52,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
+img {
+  width: 15%;
+}
 template {
     margin: 0;
-    padding: 0;
+    padding-top: 0;
     box-sizing: border-box;
 }
 header {
+    padding-top: 2rem;
+
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -67,18 +72,25 @@ header {
     position: fixed;
     div {
       display: flex;
-      gap: 1rem;
+      gap: 2rem;
+
     }
   }
 ul {
     display: flex;
     list-style: none;
+    gap: 2rem;
 }
 a {
     text-decoration: none;
     color: white;
+    font-size: 1.25em;
+    font-weight: 100;
 }
-.fa-solid {
+.whiteIcon {
     color: white;
+    font-size: 1.5em;
+    font-weight: 100;
 }
+
 </style>
